@@ -117,7 +117,7 @@ describe("circular reference problem", () => {
         user.photos = [photo1];
 
         beforeEach(() => {
-            // isCircularSpy = sinon.spy(TransformOperationExecutor.prototype, "isCircular");
+            isCircularSpy = sinon.spy(TransformOperationExecutor.prototype, "isCircular" as any);
         });
 
         afterEach(() => {
